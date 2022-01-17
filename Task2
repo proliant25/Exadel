@@ -1,0 +1,17 @@
+traceroute ip address of myserver to check if can get to it via icmp
+	if result is positive:
+		checking dns resolving (in case i'm using FQDN for connecting to the server)
+			if DNS resolves the name
+				checking local firewall on PC (if there is any)
+				checking firewall access list on my local router
+        check firewall setting on remote server if there is any possibility
+			else 
+				checking local DNS setting on local PC
+
+	if trace passes my local router:
+    but can not get destination host - Call to ISP (double check firewall setting on remote server if there is any possibility)
+ 
+  if trace does not pass router:
+		checking gateway configuration on PC
+		checking if router can communicate with next hop IP
+		checking physical conectivity
